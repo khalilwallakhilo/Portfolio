@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(https://www.datacenterknowledge.com/sites/datacenterknowledge.com/files/styles/article_featured_retina/public/hifive-unleashed-board-angle_jpg_project-tile_1.jpg?itok=t5psUWrk);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(https://genial-code.com/wp-content/uploads/2019/09/1-1.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(https://www.raspberrypi.com/app/uploads/2019/12/flappy-bird-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(https://repository-images.githubusercontent.com/4215600/949f9f80-4b74-11ea-8951-de81b8fb569f);
+    background-size: cover;
+    background-position: center;
+}
+.img-box h3{
+    color: black;
+    display: inline-block;  
+    background-color: white; 
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0,5s;
+}
+.img-box:hover{
+    width: 600px;
+    cursor: pointer;
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
+h1 {
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+}
+h2{
+    text-align: center;
+}
